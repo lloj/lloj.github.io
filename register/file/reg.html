@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!-- saved from url=(0043)https://www.263.net/scrm-api/leads/reg.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+		<!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+		<title>注册</title>
+		<script async="" src="./identify.js"></script><script src="./326460.js" defer="" async=""></script><script src="./hm.js"></script><script type="text/javascript" src="./jquery-1.11.3.min.js"></script>
+		<script type="text/javascript" src="./reg.js"></script>
+		<script type="text/javascript" src="./verify.js"></script>
+		<link rel="stylesheet" type="text/css" href="./verify.css">
+		<link rel="stylesheet" type="text/css" href="./reg.css">
+
+	</head>
+	<body>
+		 <form class="creg-form" action="" method="POST"> 
+			 <input name="name" type="text" placeholder="用户名（不超过32字符）" value="" class="text_input strong" size="32" maxlength="32">
+			 <br>
+			 <input name="company" type="password" placeholder="密码（不超过64字符）" value="" class="text_input strong" size="64" maxlength="64">
+			 <br>
+			 <input name="phone" type="text" placeholder="手机号" value="" class="text_input strong" size="30" maxlength="30" onblur="javascript: resetVerify();">
+			 <br>
+			 <button type="button" name="submit" class="submit_btn" onclick="submit1()">注册！</button>
+		</form> 
+		
+		<!--提示消息-->
+		<div class="tipsBox"><span></span></div>
+		<script>
+		    // 接收父页面数据
+		    window.addEventListener('message', function(e) {
+				$("input[name='requesturl']").val(e.data.requesturl)
+		        $("input[name='firstURL']").val(e.data.firstURL)
+				$("input[name='sourceURL']").val(e.data.sourceURL)
+		    }, false);
+		</script>
+		<script src="./stats.js.下载"></script><div style="display:none">
+<span id="cnzz_stat_icon_1256901495"></span><script src="./z_stat.php" type="text/javascript"></script></div>
+
+	
+
+</body></html>

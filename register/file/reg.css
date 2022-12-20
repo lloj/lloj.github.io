@@ -1,0 +1,38 @@
+*,body,html{margin: 0;padding: 0;font-family:PingFangSC-light,"Source Sans Pro","Helvetica Neue",Arial,"Hiragino Sans GB","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;font-size:14px;color:#333;}
+body{ -webkit-tap-highlight-color:rgba(0,0,0,0); }
+input,select,textarea,button{-webkit-appearance:none;outline:none;}
+/*表单*/
+input::-webkit-input-placeholder{color:#aaaaaa;}
+form{margin:20px;margin-top: 0;font-size:14px;}
+form input[type="text"],form input[type="password"]{border:none;border-bottom: 1px solid #dddddd;width: 100%;height: 40px;line-height: 40px;margin-top: 20px;font-size: 16px;}
+form input:focus{border-color: #0078d711;}
+form .submit_btn{background:#0078d7; height:40px;display: block;line-height:40px;width:100%;margin:50px auto 20px auto;border: none;color: #ffffff;font-size: 18px;border-radius:0px;}
+form .submit_btn:active{background-color: #0066CC;}
+
+form .btn-getcode{border-radius: 5px;border:1px solid #0078D7;display: block;float: right;padding:5px 10px;font-size: 12px;color: #0078D7;margin-top:30px;text-decoration: none;background: #ffffff;}
+form .btn-getcode[disabled]{border-radius: 5px;border:1px solid #DDDDDD;float: right;padding:4px 10px;font-size: 12px;color: #aaaaaa;}
+form input.code{width: 50%;}
+
+.error{color: #ffffff;height:30px;line-height: 30px;text-align: center;}
+.error div{background-color: #f4780b;width: 100%;display:none;}
+/*提示相关*/
+.tipsBox{ position: fixed;width: 100%; margin-top:-10px;top: 40%;left: 0; text-align: center; display:none}
+.tipsBox span{background:rgba(0, 0, 0, 0.7) none repeat scroll 0 0; height:40px; display: inline-block;padding:0 20px;line-height:40px;color:#ffffff; border-radius:40px;z-index: 10000;font-size:14px;}
+
+/*注册结果*/
+.result{text-align: center;font-size: 14px;padding:40px 20px;border: 1px solid #f1f1f1;}
+.result .icon{width: 128px;height: 128px;display: inline-block;border-radius: 128px;}
+.result .icon img{width: 100%;}
+.result .success h2{color: #39cd9d;font-size: 24px;font-weight: normal;}
+.result .success .icon {background-color: #c2f6e9}
+.result .fail h2{color: #f56506;font-size: 24px;font-weight: normal;}
+.result .fail .icon {background-color: #ffe3d0}
+.result p{display: block;padding-top: 15px;}
+.result p font{color: #ff3300;font-size: 18px;}
+
+
+.result .qr{margin-top: 10px;}
+
+@media (max-width: 768px){
+	.result{border:0;padding: 30px 0;border-top: 1px solid #f1f1f1;margin: 10px 15px 0 15px;}
+}
